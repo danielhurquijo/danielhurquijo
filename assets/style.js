@@ -1,5 +1,5 @@
 // Initialize font properties
-const fontname = "Ubuntu";
+const fontname = "Arial";
 const fontweights = [300, 400]
 
 // Color properties
