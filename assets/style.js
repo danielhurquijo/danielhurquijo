@@ -3,9 +3,9 @@ const fontname = "Arial";
 const fontweights = [300, 400]
 
 // Color properties
-const basecolor = "#777";
-const accentcolor = "#a00";
-const highlightcolor = "#111";
+const basecolor = "#000000";
+const accentcolor = "#ff0077";
+const highlightcolor = "#000000";
 
 // const basecolor = "#888";
 // const accentcolor = "#222";
