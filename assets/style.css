@@ -43,6 +43,24 @@ a:hover {
     /* filter: grayscale(100%); */
 }
 
+strong { font-weight: bold; }
+
+  .abstract-link {
+    color: #333; /* Adjust the color as desired */
+    cursor: pointer;
+  }
+  .abstract-content {
+    display: none;
+  }
+  .abstract-arrow::before {
+    content: '\25B6'; /* Right arrow */
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .abstract-content-show .abstract-arrow::before {
+    content: '\25BC'; /* Down arrow */
+  }
+
 @media (min-width: 768px) {
     .fixed-posi {
         /* width: 50%;

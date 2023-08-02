@@ -4,7 +4,7 @@ const fontweights = [300, 400]
 
 // Color properties
 const basecolor = "#000000";
-const accentcolor = "#ff0077";
+const accentcolor = "#000000";
 const highlightcolor = "#000000";
 
 // const basecolor = "#888";
@@ -31,8 +31,25 @@ const menudecoration = "none";
 // const menuhoverduration = "0.3s";
 // const menuhoverdecoration = "none"; //none, underline, overline, dotted, color (https://www.w3schools.com/cssref/pr_text_text-decoration.asp)
 
+/// Abstract button
+function toggleAbstract() {
+    var abstractContent = document.getElementById("abstract-content");
+    var abstractLink = document.getElementById("abstract-link");
+    var abstractSection = document.getElementById("abstract-section");
+
+    if (abstractContent.style.display === "none") {
+      abstractContent.style.display = "block";
+      abstractSection.classList.add("abstract-content-show");
+      abstractLink.innerHTML = '<span class="abstract-arrow"></span>Hide Abstract';
+    } else {
+      abstractContent.style.display = "none";
+      abstractSection.classList.remove("abstract-content-show");
+      abstractLink.innerHTML = '<span class="abstract-arrow"></span>Show Abstract';
+    }
+  }
+
 // Header properties
-const headercolor = accentcolor;
+const headercolor = basecolor;
 const headerfontsize = "18pt";
 const headerdecoration = "none";
 const namecolor = highlightcolor;
@@ -40,9 +57,9 @@ const namefontsize = "23pt";
 
 
 // Publication properties
-const ptitlecolor = accentcolor;
+const ptitlecolor = basecolor;
 const ptitlefontsize = bodyfontsize;
-const ptitleweight = bodyfontweight;
+const ptitleweight = "bold";
 const ptitledecoration = "none";
 const ptitlestyle = "normal";
 
