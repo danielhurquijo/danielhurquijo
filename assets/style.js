@@ -1,5 +1,5 @@
 // Initialize font properties
-const fontname = "Arial";
+const fontname = "Helvetica";
 const fontweights = [300, 400]
 
 // Color properties
