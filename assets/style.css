@@ -16,6 +16,10 @@ a:hover {
     font-size: 9pt;
 }
 
+.semi-bold {
+  font-weight: 550;
+}
+
 .tagsep {
     padding: 4px;
 }
